@@ -1,0 +1,28 @@
+{
+  "name": "domain-specific-link-modifier",
+  "version": "1.0.0",
+  "description": "A Chrome extension that modifies anchor tags' href based on domain-specific rules.",
+  "main": "dist/background.js",
+  "scripts": {
+    "build": "tsc && npm run copy",
+    "copy": "copyfiles *.html manifest.json dist/",
+    "watch": "tsc -w",
+    "lint": "eslint '**/*.ts'",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "chrome-extension",
+    "typescript",
+    "link-modification"
+  ],
+  "author": "berlin",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "copyfiles": "^2.4.1"
+  },
+  "dependencies": {}
+}
