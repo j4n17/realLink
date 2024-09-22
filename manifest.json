@@ -1,26 +1,28 @@
 {
   "manifest_version": 3,
-  "name": "Domain-Specific Link Modifier",
-  "version": "1.1",
-  "description": "Automatically modify href of anchor tags based on the domain's custom rules",
+  "name": "RealLink",
+  "version": "1.2",
+  "description": "Automatically modify href of anchor tags based on domain-specific rules",
   "permissions": [
     "activeTab",
-    "scripting",
-    "storage"
+    "scripting"
   ],
   "action": {
-    "default_popup": "dist/popup.html"
+    "default_popup": "popup.html"
   },
   "background": {
-    "service_worker": "dist/background.js"
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
+        "https://*.juejin.cn/*",
+        "https://*.zhihu.com/*",
+        "https://*.csdn.net/*",
+        "https://*.jianshu.leichenlong.com/*"
       ],
       "js": [
-        "dist/content.js"
+        "content.js"
       ]
     }
   ]

@@ -8,5 +8,5 @@
     "strict": true,
     "esModuleInterop": true
   },
-  "include": ["content.ts", "popup.ts", "background.ts"]
+  "include": ["*.ts"]
 }

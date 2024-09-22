@@ -1,12 +1,19 @@
 # realLink
 
-`<a href="https://stupidLink" title="https://realLink"></a> `
+`<a href="https://stupidLink?target=https://realLink"></a>`
 转变为
 ` <a href="https://realLink"></a>`
 
-#### 自行配置目标路径字段
+#### 还原以下平台的外链拦截
 
-比如在域名 juejin.cn 下，真实路径为 a 标签的 title 字段上，在 popup 弹窗中输入'title'
+```
+"matches": [
+    "https://*.juejin.cn/*",
+    "https://*.zhihu.com/*",
+    "https://*.csdn.net/*",
+    "https://*.jianshu.leichenlong.com/*"
+  ],
+```
 
 #### 需自行本地安装，
 
@@ -18,7 +25,7 @@
 
 点击左上角的 "加载已解压的扩展程序" 按钮。
 
-在弹出的文件选择窗口中，导航到项目的根目录，然后点击 选择文件夹。
+在弹出的文件选择窗口中，导航到项目目录，选择项目目录下的 dist 文件夹。
 
 安装完成之后刷新页面
 

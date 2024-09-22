@@ -1,5 +1,5 @@
 {
-  "name": "domain-specific-link-modifier",
+  "name": "real-link",
   "version": "1.0.0",
   "description": "A Chrome extension that modifies anchor tags' href based on domain-specific rules.",
   "main": "dist/background.js",
