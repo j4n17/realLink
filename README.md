@@ -6,7 +6,7 @@
 
 #### 自行配置目标路径字段
 
-比如在域名https://juejin.cn/ 下，真实路径为 a 标签的 title 字段上，在 popup 弹窗中输入'title'
+比如在域名 juejin.cn 下，真实路径为 a 标签的 title 字段上，在 popup 弹窗中输入'title'
 
 #### 需自行本地安装，
 
